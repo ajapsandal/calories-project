@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#AEAEAE</color>
+    <color name="background">#F6F6F6</color>
+    <color name="backgroundResult">#a1887f</color>
+    <color name="button">#343a40</color>
+    <color name="addButton">#6c757d</color>
+    <color name="backgroundText">#e9ecef</color>
+    <color name="strokeInputText">#a1887f</color>
+    <color name="strokeText">#6d4c41</color>
+    <color name="line">#adb5bd</color>
+</resources>

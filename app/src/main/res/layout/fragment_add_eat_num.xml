@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addEatNum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddEat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/foodImageInAddEatNum"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/egg" />
+
+        <TextView
+            android:id="@+id/nameFoodInAddEatNum"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/infoCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="В одной штуке - 85 калорий"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/deleteFood"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="64dp"
+                android:background="@drawable/fields_button"
+                android:text="-"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/numOfFood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_black"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/addFood"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="64dp"
+                android:background="@drawable/fields_button"
+                android:text="+"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/caloriesInAddEatNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="0 Калорий"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/acceptInAddEatNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/accept"
+        android:textColor="@color/white"
+        android:textSize="16dp"/>
+</FrameLayout>

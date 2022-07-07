@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/addEat"
+    android:layout_height="match_parent"
+    tools:context=".AddEat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+
+        <ImageView
+            android:id="@+id/foodImageInAddEat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/egg" />
+
+        <TextView
+            android:id="@+id/nameFoodInAddEat"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/infoCaloriesInAddEat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="В одной штуке - 85 калорий"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/inputGram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/input_fields"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Введите кол-во грамм"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/caloriesInAddEat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="250 Калорий"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/acceptInAddEat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Применить"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</FrameLayout>

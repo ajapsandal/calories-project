@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:id="@+id/foodList"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/egg"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/image"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cal"
+        style="@style/Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/image"
+        android:maxLength="20"
+        android:maxLines="2"
+        android:singleLine="true"
+        android:text="calories" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Title">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/roboto_black</item>
+    </style>
+
+    <style name="Subtitle">
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+</resources>
